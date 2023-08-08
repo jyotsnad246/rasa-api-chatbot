@@ -1,0 +1,14 @@
+version: "3.1"
+
+stories:
+
+- story: weather inquiry
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: weather_for_location
+  - action: utter_getting_weather
+  - action: action_get_weather
+  - intent: thanks
+  - action: utter_welcome
+  - action: utter_goodbye
